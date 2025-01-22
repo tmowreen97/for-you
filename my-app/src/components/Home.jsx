@@ -2,6 +2,8 @@ import '../App.css'
 import { motion } from "framer-motion"
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router";
+import closed from '../imgs/closed-envelope.gif';
+import open from '../imgs/open-envelope.gif'
 
 const Home = () => {
   const [envelope, setEnvelope] = useState(false)
@@ -24,14 +26,15 @@ const Home = () => {
             <img 
               width={'550px'}
               height={'500px'}
-              src='/imgs/open-envelope.gif'
+              src={open}
             /> 
             </motion.div>
             :
             <img 
               onClick={()=>setEnvelope(true)}
               id = 'closed-envelope'
-              src='/imgs/closed-envelope.gif'
+              alt='closed-envelope'
+              src={closed}
             />
           }        
         </div>
