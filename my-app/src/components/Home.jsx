@@ -12,7 +12,7 @@ const Home = () => {
       };
     },[envelope])
   return(
-    <div className="App">
+    <div className="App test-cursor">
         {envelope ? '' : <h2 id='click-text'>Click Here</h2>}
         <div id='envelope-img'>
           {
