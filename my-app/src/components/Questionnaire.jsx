@@ -104,8 +104,8 @@ const Questionnaire = () => {
       <div>
         {status ? 
         <div>
-          <h1 id="finally-text">Complete</h1>
-          <p>Thank you for filling out my questionnaire.</p>
+          <h1 id="finally-text">Thank You</h1>
+          <p>I appreciate you taking the time to fill out my questionnaire.</p>
           <p>Your results are as follows:</p>
           <div id='final-results'>
             {

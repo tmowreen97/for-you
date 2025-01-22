@@ -27,7 +27,13 @@ code {
   font-weight: 400;
   font-style: normal;
   font-size:100px;
-  height:auto;
+  height:125px;
+  color:#991628;
+}
+#valentine-text{
+  color:#ff2644;
+  text-shadow: -2px -1px 1px #991628, 0 0 0 #a96292, 0 0 0 #a96292, 0 0 0 #a96292
+
 }
 
 #finally-text{
@@ -36,6 +42,8 @@ code {
   font-style: italic;
   font-size: 100px;
   margin: 0px;
+  color:#ff74a3;
+  text-shadow: -5px -5px 1px #a96292, -5px -2px 1px #a96292, -5px -2px 0 #a96292, 0 0 0 #a96292
 }
 
 #question-text{
@@ -110,6 +118,15 @@ button{
   border-radius: 10px;
   cursor: pointer;
   font-family: "Jersey 15", serif;
+  color:#ff74a3;
+  background-color:#ffc0c8;
+  border: 2px solid #ff2644;
+  /* border-width: 1px; */
+}
+
+button:hover{
+  background-color:#ff74a3;
+  color:aliceblue;
 }
 
 
@@ -133,7 +150,7 @@ button{
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid orange; /* The typwriter cursor */
+  border-right: .1em solid #ff74a3; /* The typwriter cursor */
   white-space:nowrap;
   margin: 0px; /* Gives that scrolling effect as the typing happens */
   animation: 
@@ -150,5 +167,5 @@ button{
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange;}
+  50% { border-color: #ff74a3;}
 }

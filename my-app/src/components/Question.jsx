@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Question = () => {
   const [yes, setYes]= useState(false)
@@ -56,11 +57,15 @@ const Question = () => {
       />
     :
     <div>
-      <h1 id="the-question" className="typewriter">Will you be my Valentine?...  </h1>
-    <div id='question-buttons'>
-      <button onClick={()=> {handleYes()}}>Yes</button>
-      { no_answer>=4 ? '' : <button onClick={()=>handleNo()}>{no_answers[no_answer]}</button>}
-    </div>
+      <h1 id="the-question" className="typewriter">Will you be my <span id='valentine-text'>Valentine</span>?...  </h1>
+      <motion.div
+        animate={{opacity:[0,1], transition:{delay:4}}}
+      >
+        <div id='question-buttons'>
+          <button onClick={()=> {handleYes()}}>Yes</button>
+          { no_answer>=4 ? '' : <button onClick={()=>handleNo()}>{no_answers[no_answer]}</button>}
+        </div>
+      </motion.div>
     </div>}
   </div>
   )
