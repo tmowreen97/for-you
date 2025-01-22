@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/for-you/static/css/main.d4219ede.css",
-    "main.js": "/for-you/static/js/main.49e78ac8.js",
+    "main.css": "/for-you/static/css/main.e0dc275e.css",
+    "main.js": "/for-you/static/js/main.4250aa6a.js",
+    "static/media/spongebob-valentine.gif": "/for-you/static/media/spongebob-valentine.80e515f48ce4322d397b.gif",
+    "static/media/love-you.gif": "/for-you/static/media/love-you.2189a68014fd2f355c88.gif",
     "static/media/closed-envelope.gif": "/for-you/static/media/closed-envelope.a439a7bbfe137bf6a2b2.gif",
     "static/media/open-envelope.gif": "/for-you/static/media/open-envelope.b6b1dff23e952a51885d.gif",
     "index.html": "/for-you/index.html",
-    "main.d4219ede.css.map": "/for-you/static/css/main.d4219ede.css.map",
-    "main.49e78ac8.js.map": "/for-you/static/js/main.49e78ac8.js.map"
+    "main.e0dc275e.css.map": "/for-you/static/css/main.e0dc275e.css.map",
+    "main.4250aa6a.js.map": "/for-you/static/js/main.4250aa6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4219ede.css",
-    "static/js/main.49e78ac8.js"
+    "static/css/main.e0dc275e.css",
+    "static/js/main.4250aa6a.js"
   ]
 }
