@@ -46,6 +46,42 @@ code {
   padding: 0px;
 }
 
+p{
+  font-family: "The Girl Next Door", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  padding: 0px;
+}
+
+#link{
+  font-size: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#continue-link{
+  font-family: "Meow Script", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 45px;
+  margin: 0px;
+}
+
+#link:hover, #continue-link:hover{
+  color: fuchsia;
+  cursor: pointer;
+}
+
+ul,li{
+  font-family: "Jersey 15", serif;
+  font-size: 20px;
+  text-align:center;
+  padding: 4px;
+  border-style:dotted;
+  border-radius: 10px;
+}
+
 /* Containers */
 
 #center-container{
@@ -56,7 +92,6 @@ code {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 
 /* Buttons */
 
@@ -76,6 +111,8 @@ button{
   cursor: pointer;
   font-family: "Jersey 15", serif;
 }
+
+
 
 /* Images */
 

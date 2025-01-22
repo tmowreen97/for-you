@@ -5,6 +5,7 @@ import Question from "./components/Question";
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import SaidYes from "./components/SaidYes";
 import Questionnaire from "./components/Questionnaire";
+import Complete from "./components/Complete";
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/question' element={<Question/>}/>
           <Route path='/said-yes' element={<SaidYes/>}/>
           <Route path='/questionnaire' element={<Questionnaire/>}/>
+          <Route path='/complete' element={<Complete/>}/>
         </Routes>
       </HashRouter>
     </>
