@@ -65,8 +65,16 @@ const Questionnaire = () => {
     console.log(answer.target.innerText)
     if (answer.target.innerText == "Stay In"){
       setQuestions(question_map[1].additional_questions)
+      setFinalAnswer([...finalAnswer, {
+        question: 'Do you want to go outside or stay in?',
+        answer: 'Stay In'
+      }])
     } else {
       setQuestions(question_map[0].additional_questions)
+      setFinalAnswer([...finalAnswer, {
+        question: 'Do you want to go outside or stay in?',
+        answer: 'Go Out'
+      }])
     }
   }
 

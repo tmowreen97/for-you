@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import loveYou from '../imgs/love-you.gif'
+
 
 const Question = () => {
   const [yes, setYes]= useState(false)
@@ -53,7 +55,8 @@ const Question = () => {
     yes ? 
     <img 
         id="yes-img"
-        src="/imgs/love-you.gif"
+        alt='love-you'
+        src={loveYou}
       />
     :
     <div>

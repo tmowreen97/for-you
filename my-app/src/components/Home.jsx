@@ -26,6 +26,7 @@ const Home = () => {
             <img 
               width={'550px'}
               height={'500px'}
+              alt='open-envelope'
               src={open}
             /> 
             </motion.div>

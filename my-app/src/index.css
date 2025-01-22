@@ -127,13 +127,13 @@ button{
   background-color:#ffc0c8;
   border: 2px solid #ff2644;
   /* border-width: 1px; */
-  cursor: url('https://i.sstatic.net/CVWro.png'), auto;
+  cursor: pointer;
 }
 
 button:hover{
   background-color:#ff74a3;
   color:aliceblue;
-  cursor: url('https://i.sstatic.net/CVWro.png');
+
 }
 
 
