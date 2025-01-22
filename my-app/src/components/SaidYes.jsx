@@ -1,8 +1,18 @@
+
+
 const SaidYes = () => {
+
   return(
-    <div>
-      <p>Finally!</p>
-      <p>Now what do you want to eat?</p>
+    <div id="center-container">
+      <p id='finally-text'>Finally!</p>
+      <p id="question-text">Now it's time to answer some questions.</p>
+      <div id='question-buttons'>
+        <a href="#/questionnaire">
+        
+          <button>Continue</button>
+        </a>
+        
+      </div>
     </div>
   )
 }

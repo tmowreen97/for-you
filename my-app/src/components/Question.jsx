@@ -47,7 +47,7 @@ const Question = () => {
     //   </div>
     // </div>
 
-    <div id='question-container'>
+    <div id='center-container'>
     {
     yes ? 
     <img 

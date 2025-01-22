@@ -13,7 +13,9 @@ code {
     monospace;
 }
 
-h2{
+/* Text Format */
+
+#click-text{
   font-family: "The Girl Next Door", serif;
   font-weight: 700;
   font-style: normal;
@@ -26,8 +28,71 @@ h2{
   font-style: normal;
   font-size:100px;
   height:auto;
-
 }
+
+#finally-text{
+  font-family: "Fascinate", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 100px;
+  margin: 0px;
+}
+
+#question-text{
+  font-family: "The Girl Next Door", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  padding: 0px;
+}
+
+/* Containers */
+
+#center-container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* Buttons */
+
+#question-buttons{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  background-color: transparent;
+}
+
+button{
+  padding: 10px;
+  margin-left: 75px;
+  margin-right: 75px;
+  font-size: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Jersey 15", serif;
+}
+
+/* Images */
+
+#envelope-img{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+#closed-envelope{
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+/* Special Effects */
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -49,47 +114,4 @@ h2{
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange;}
-}
-
-#question-container{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-}
-
-#question-buttons{
-  display: flex;
-  justify-content: center;
-  margin: 50px;
-  background-color: transparent;
-}
-
-button{
-  padding: 10px;
-  margin-left: 75px;
-  margin-right: 75px;
-  font-size: 24px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: "Jersey 15", serif;
-}
-
-#yes-img{
-
-  position: relative;
-}
-
-#envelope-img{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-}
-
-#closed-envelope{
-  margin-top: 50px;
-  cursor: pointer;
 }

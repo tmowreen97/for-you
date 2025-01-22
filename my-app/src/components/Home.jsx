@@ -13,7 +13,7 @@ const Home = () => {
     },[envelope])
   return(
     <div className="App">
-        {envelope ? '' : <h2>Click Here</h2>}
+        {envelope ? '' : <h2 id='click-text'>Click Here</h2>}
         <div id='envelope-img'>
           {
             envelope ? 
