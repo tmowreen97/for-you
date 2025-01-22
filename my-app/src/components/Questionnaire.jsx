@@ -1,6 +1,7 @@
 import { useState } from "react"
 const Questionnaire = () => {
   const [questions, setQuestions] = useState(false)
+  const [number, setNumber] = useState(0)
   // const[answer, setAnswer] = useState(false)
   const question_map = [
     {
@@ -64,11 +65,28 @@ const Questionnaire = () => {
   console.log(questions)
   return(
     <div id="center-container">
-      <h1 id='question-text'>Do you want to go outside or stay in?</h1>
-      <div id='question-buttons'>
-        <button onClick={(e)=> {handleAnswer(e)}}>Go Out</button>
-        <button onClick={(e)=> {handleAnswer(e)}}>Stay In</button>
+      {questions ? 
+      <div>
+        <h1 id='question-text'>{questions[number].question}</h1>
+        <div id='question-buttons'>
+          {questions[number].answers.map((answer)=> {
+            return(
+              <button onClick={(e)=> {handleAnswer(e)}}>{answer}</button>
+            )
+          })}
+          
+          
+        </div>
       </div>
+      : 
+      <div>
+        <h1 id='question-text'>Do you want to go outside or stay in?</h1>
+        <div id='question-buttons'>
+          <button onClick={(e)=> {handleAnswer(e)}}>Go Out</button>
+          <button onClick={(e)=> {handleAnswer(e)}}>Stay In</button>
+        </div>
+      </div>
+      }
     </div>
   )
 }
